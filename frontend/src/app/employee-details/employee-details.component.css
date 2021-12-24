@@ -1,0 +1,28 @@
+h3,th,td,h2,h4{
+  text-align:center;
+}
+.button {
+  margin-top:10px;
+  margin-bottom: 40px;
+  margin-left:20px;
+  padding: 8px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+

@@ -1,0 +1,38 @@
+<div *ngIf="Data!=null">
+  <h2 style="margin-top:40px;text-align:center;">Employee Short Details</h2>
+    <h3> EmployeeId : {{ Data.EmployeeId?Data.EmployeeId:'???'}}</h3>
+    <h3> FirstName : {{ Data.FirstName?Data.FirstName:'???'}}</h3>
+    <h3> LastName : {{ Data.LastName?Data.LastName:'???'}}</h3>
+</div>
+<div *ngIf="Data!=null && AttendanceData!=null">
+  <h2  style="text-align:center;margin-top:40px;margin-bottom:40px;">Attendance Report of Employee {{Data.EmployeeId}}</h2>
+  <h4>Pick year and month to filter</h4>
+    <input #MonthYear style="margin-left:45%;margin-top:10px;margin-bottom:20px;"type="month">
+    <button class="button" (click)="FilterData(MonthYear.value)">Filter</button>
+</div>
+
+<div *ngIf="AttendanceData!=null">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th scope="col" >Entry Time</th>
+      <th scope="col" >Exit Time</th>
+      <th scope="col" >Date</th>
+      <th scope="col" >Month</th>
+      <th scope="col" >Year</th>
+      <th scope="col" >Suite</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let data of AttendanceData" scope="row">
+      <td >{{data.EntryTime?(data.EntryTime):"Not Given"}}</td>
+      <td >{{data.ExitTime?(data.ExitTime):"Not Given"}}</td>
+      <td >{{data.Date?(data.Date):"Not Given"}}</td>
+      <td >{{data.Month?(data.Month):"Not Given"}}</td>
+      <td >{{data.Year?(data.Year):"Not Given"}}</td>
+      <td >{{data.Suite?(data.Suite):"Not Given"}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

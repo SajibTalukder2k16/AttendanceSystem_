@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Reset Password</h2>
+<div [formGroup]="userForm">
+  <mat-form-field mat-field appearance="outline" style="width:100%;">
+    <mat-label>Confirm Password<!--<span class="color_red">* </span>--></mat-label>
+    <input type="password" matInput  required >
+  </mat-form-field>
+</div>
+
+
+<button mat-raised-button>Sajib</button>
+<mat-form-field></mat-form-field>
+<table>
+  <th>EmployeeId</th>
+  <th>FirstName</th>
+  <th>LastName</th>
+  <th>PhoneNumber</th>
+  <th>Email</th>
+  <th>Address</th>
+  <th>Designation</th>
+  <tr *ngFor="let user of Data">
+    <td>{{user.EmployeeId?(user.EmployeeId):"Not Given"}}</td>
+    <td>{{user.FirstName?(user.FirstName):"Not Given"}}</td>
+    <td>{{user.LastName?(user.LastName):"Not Given"}}</td>
+    <td>{{user.PhoneNumber?(user.PhoneNumber):"Not Given"}}</td>
+    <td>{{user.Email?(user.Email):"Not Given"}}</td>
+    <td>{{user.Address?(user.Address):"Not Given"}}</td>
+    <td>{{user.Designation?(user.Designation):"Not Given"}}</td>
+  </tr>
+</table>
+

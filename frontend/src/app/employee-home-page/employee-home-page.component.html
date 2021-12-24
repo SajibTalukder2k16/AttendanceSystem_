@@ -1,0 +1,7 @@
+<marquee><h1>{{EntereredMsg}}</h1></marquee>
+<div class="center">
+  <button class="btn1" (click)="onClick1()" *ngIf="!(clicked2||clicked3)">{{suite1}}</button>
+  <button class="btn2" (click)="onClick2()" *ngIf="!(clicked1||clicked3)">{{suite2}}</button>
+  <button class="btn3" (click)="onClick3()" *ngIf="!(clicked1||clicked2)">{{suite3}}</button>
+</div>
+

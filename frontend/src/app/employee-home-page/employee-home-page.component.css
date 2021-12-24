@@ -1,0 +1,31 @@
+.btn1{
+  position: absolute;
+  left: 22.5%;
+  width:200px;
+  height:200px;
+  background-color:green;
+}
+.btn2{
+  width:200px;
+  height:200px;
+  position: absolute;
+  left: 45%;
+  background-color:blue;
+}
+.btn3{
+  width:200px;
+  height:200px;
+  position: absolute;
+  left: 67.5%;
+  background-color:purple;
+}
+.center {
+  color:white;
+  margin-top:20px;
+  margin-left: 100px;
+  margin-right:100px;
+  width: 90%;
+  height:400px;
+  border: 3px solid green;
+  padding: 100px;
+}

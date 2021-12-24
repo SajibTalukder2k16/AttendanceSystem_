@@ -1,0 +1,48 @@
+<div style="padding:60px;">
+  <div [formGroup]="userForm">
+    <div class="center">
+      <div>
+        <label>Employee Id</label>
+        <input formControlName="EmployeeId" class="form-control">
+      </div>
+      <div>
+        <label>First Name</label>
+        <input formControlName="FirstName" class="form-control">
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input formControlName="LastName" class="form-control">
+      </div>
+      <div>
+        <label>Designation</label>
+        <input formControlName="Designation" class="form-control">
+      </div>
+      <div>
+        <label>Address</label>
+        <input formControlName="Address" class="form-control">
+      </div>
+      <div>
+        <label>PhoneNumber</label>
+        <input formControlName="PhoneNumber" class="form-control">
+      </div>
+      <div>
+        <label>Email</label>
+        <input formControlName="Email" class="form-control">
+      </div>
+
+      <div>
+        <label>PIN</label>
+        <input type=password formControlName="PIN" class="form-control">
+      </div>
+
+
+
+      <div class="btn-grp">
+        <button class="button" (click)="onSubmitButtonClick()">CREATE USER</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+

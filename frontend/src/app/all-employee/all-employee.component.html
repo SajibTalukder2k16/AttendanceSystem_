@@ -1,0 +1,30 @@
+<div *ngIf="dataNotfound">
+  <h1>No Employee</h1>
+</div>
+<div *ngIf="!dataNotfound">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="col">EmployeeId</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">PhoneNumber</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Designation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of Data" scope="row" routerLink="Employee/{{user.EmployeeId}}">
+        <td>{{user.EmployeeId?(user.EmployeeId):"Not Given"}}</td>
+        <td>{{user.FirstName?(user.FirstName):"Not Given"}}</td>
+        <td>{{user.LastName?(user.LastName):"Not Given"}}</td>
+        <td>{{user.PhoneNumber?(user.PhoneNumber):"Not Given"}}</td>
+        <td>{{user.Email?(user.Email):"Not Given"}}</td>
+        <td>{{user.Address?(user.Address):"Not Given"}}</td>
+        <td>{{user.Designation?(user.Designation):"Not Given"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

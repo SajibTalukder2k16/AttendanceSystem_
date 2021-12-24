@@ -1,0 +1,20 @@
+<div style="padding:100px;">
+  <div [formGroup]="userForm">
+    <div class="center">
+      <div>
+        <label>Employee Id</label>
+        <input formControlName="EmployeeId" class="form-control">
+      </div>
+      <div>
+        <label>PIN</label>
+        <input type=password formControlName="PIN" class="form-control">
+      </div>
+      <div class="btn-grp">
+        <button class="button" (click)="onSubmitButtonClick()">SignIn</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
